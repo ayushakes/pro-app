@@ -1,0 +1,14 @@
+<p>hi iam server component</p>
+
+<input type='text' [(ngModel)]="name">
+<p>{{name}}</p>
+
+<p>{{num}}</p>
+
+<p>{{age}}</p>
+
+<h1>{{func()}}</h1>
+
+<button class="btn btn-primary" [disabled]="name==='xyz'" (click)="statfunc()" >OK</button>
+<p *ngIf="name==='xyz'">dont type xyz</p>
+<p >{{serverStatus}}</p>
